@@ -1,0 +1,21 @@
+<div>
+    <div>
+      <h3>Work Management</h3>
+    </div>
+    <div>
+      <table>
+        <tr>
+          <th>Emp Id</th>
+          <th>Workdays</th>
+          <th>Vacations Remaining</th>
+          <th>Action</th>
+        </tr>
+        <tr *ngFor="let employee of employees; let in=index">
+          <td>{{in}}</td>
+          <td>{{employee.workDays}}</td>
+          <td>{{employee.vacations}}</td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+  </div>
